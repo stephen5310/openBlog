@@ -2,7 +2,7 @@
                   'list-group-item list-group-item-success': isLoved(),
                   'list-group-item list-group-item-danger':  isHated() }" >
   <h2> {{postTitle}} </h2>
-  <p> Date de publication: {{datePost | date:'short'}} </p>
+  <p> Date de publication:  {{datePost | date:'short'}} </p>
   <p> {{postContent}} </p>
   <button class="btn btn-success" (click)="onLove()" >Love it!</button>
   <button class="btn btn-danger" (click)="onHate()" >Don't love it!</button>
